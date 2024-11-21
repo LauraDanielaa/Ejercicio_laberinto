@@ -41,11 +41,11 @@ camino(X, Y) :- conexion(Y, X).
 
 % Verificar si existe un camino y mostrarlo
 solucion(Inicio, Fin, Camino) :- 
-    busqueda_camino(Inicio, Fin, [Inicio], Camino). % El tercer elemento es una lista de puntos visitados 
+    busqueda_camino(Inicio, Fin, [Inicio], Camino). % El tercer elemento es una lista de nodos visitados 
 
 % Busqueda y construccion del camino 
 busqueda_camino(Fin, Fin, Camino, Camino). 
 busqueda_camino(Actual, Fin, Visitados, Camino) :-
     camino(Actual, Siguiente),
-    \+ member(Siguiente, Visitados), % si el punto siguiente hace parte de la lista de puntos visitados 
-    busqueda_camino(Siguiente, Fin, [Siguiente|Visitados], Camino). % recuersividad con el punto siguiente agregado en la lista de puntos visitados 
+    \+ member(Siguiente, Visitados), % si el nodo siguiente hace parte de la lista de nodos visitados 
+    busqueda_camino(Siguiente, Fin, [Siguiente|Visitados], Camino). % recursividad con el nodo siguiente agregado en la lista de nodos visitados 
