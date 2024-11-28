@@ -12,6 +12,6 @@ Modelos de programación 2
 
 Solución en prolog que desde la representación de un laberinto indique si es solucionable o no (el laberinto no debe tener islas en su representación).
 
-La ilustracion del laberinto se muestra acontinución
+La ilustración del laberinto se muestra a continución:
 
-![Logo del proyecto](https://github.com/LauraDanielaa/Ejercicio_laberinto/blob/main/laberinto.png)
+![img laberinto](https://github.com/LauraDanielaa/Ejercicio_laberinto/blob/main/laberinto.png)
